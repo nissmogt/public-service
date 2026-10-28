@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "name": "Public Service",
+  "reviewedAt": "2026-10-28",
+  "reviewMethod": "Editorial review of linked primary documents and manual observation of CPUC comment pages. Not a live feed or independent audit.",
+  "repository": "https://github.com/nissmogt/public-service",
+  "organizing": {
+    "signupUrl": null,
+    "partnerUrl": "https://www.turn.org/sempra-grc",
+    "networkUrl": "https://www.turn.org/ratepayers-united",
+    "updatesUrl": "https://subscribecpuc.cpuc.ca.gov/"
+  },
+  "sources": [
+    {
+      "id": "scg-notice", "title": "SoCalGas hearing notice", "publisher": "SoCalGas", "kind": "Utility proposal", "reviewedAt": "2026-10-28",
+      "url": "https://www.socalgas.com/pph", "locator": "What is being requested / residential impact",
+      "supports": "Requested first-year revenue increase and illustrative monthly bill impact. A request, not an approval."
+    },
+    {
+      "id": "sempra-sec", "title": "Sempra 2028 rate-case disclosure", "publisher": "SEC / Sempra", "kind": "Corporate disclosure", "reviewedAt": "2026-10-28",
+      "url": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000037/sempra-20260615.htm", "locator": "Item 7.01, requested revenue requirements table (millions)",
+      "supports": "2028 revenue requirements and incremental annual requests for 2029–2031."
+    },
+    {
+      "id": "scg-earnings", "title": "SCG-27 · Summary of Earnings", "publisher": "SoCalGas / CPUC docket", "kind": "Utility testimony", "reviewedAt": "2026-10-28",
+      "url": "https://docs.cpuc.ca.gov/PublishedDocs/SupDoc/A2606014/9454/609173497.pdf", "locator": "Table RH-1, printed B-1 / PDF page 13; figures in thousands",
+      "supports": "2027 expected revenue baseline and 2028 proposed cost composition. Total return includes financing and equity returns."
+    },
+    {
+      "id": "cpuc-hearings", "title": "CPUC public hearing schedule", "publisher": "CPUC", "kind": "Official procedure", "reviewedAt": "2026-10-28",
+      "url": "https://www.cpuc.ca.gov/pph", "locator": "SoCalGas and SDG&E public participation hearings",
+      "supports": "Dates, places and phone participation instructions. Check the official schedule before attending."
+    },
+    {
+      "id": "scg-comments", "title": "SoCalGas public comments", "publisher": "CPUC", "kind": "Docket observation", "reviewedAt": "2026-10-28",
+      "url": "https://apps.cpuc.ca.gov/c/A2606014", "locator": "Public Comments tab; pagination total observed October 28, 2026",
+      "supports": "49 displayed entries at observation; not unique people or a representative survey. Docket states cases were consolidated July 7, 2026."
+    },
+    {
+      "id": "sdge-comments", "title": "SDG&E public comments", "publisher": "CPUC", "kind": "Docket observation", "reviewedAt": "2026-10-28",
+      "url": "https://apps.cpuc.ca.gov/c/A2606015", "locator": "Public Comments tab; pagination total observed October 28, 2026",
+      "supports": "425 displayed entries at observation; separate list for the related, consolidated SDG&E application."
+    },
+    {
+      "id": "participation", "title": "Formal and informal participation", "publisher": "Public Advocates Office", "kind": "Official procedure", "reviewedAt": "2026-10-28",
+      "url": "https://www.publicadvocates.cpuc.ca.gov/proceedings/how-to-participate-in-a-proceeding", "locator": "Introduction and methods for becoming a party",
+      "supports": "Public comments and formal party participation have different roles; informal comments do not substitute for evidence."
+    },
+    {
+      "id": "turn", "title": "TURN · Sempra campaign", "publisher": "The Utility Reform Network", "kind": "Advocacy resource", "reviewedAt": "2026-10-28",
+      "url": "https://www.turn.org/sempra-grc", "locator": "Sempra General Rate Case campaign",
+      "supports": "An existing campaign and opportunities to participate. Public Service is independent and does not claim a partnership."
+    }
+  ],
+  "cases": [
+    {
+      "id": "socalgas", "utility": "SoCalGas", "service": "Natural gas", "docket": "A.26-06-014", "status": "Proposed", "regulator": "California Public Utilities Commission",
+      "title": "A higher bill deserves a closer look.",
+      "summary": "Follow the proposed gas-rate increase from the headline to the source documents, then make your voice part of the process.",
+      "notice": { "increaseMillions": 485, "increasePercent": 10.5, "monthlyIllustration": 5.67, "illustrationTherms": 35, "sourceIds": ["scg-notice"] },
+      "revenue": {
+        "unit": "USD millions", "baselineYear": 2027, "baseline": 4611.764,
+        "testYear": 2028, "testYearAmount": 5096.306,
+        "increments": [{ "year": 2029, "amount": 315 }, { "year": 2030, "amount": 312 }, { "year": 2031, "amount": 314 }],
+        "sourceIds": ["scg-earnings", "sempra-sec"],
+        "note": "2027 is the utility’s expected baseline, not a final audited collection. Later years add SEC-disclosed increments rounded to millions. These are annual revenue levels, not household bill forecasts or cumulative collections."
+      },
+      "composition": {
+        "year": 2028, "total": 5096.306, "unit": "USD millions", "sourceIds": ["scg-earnings"],
+        "items": [
+          { "label": "Operations & maintenance", "amount": 2099.973, "color": "#436b53" },
+          { "label": "Depreciation & amortization", "amount": 1312.894, "color": "#a9bba1" },
+          { "label": "Return on invested capital", "amount": 1348.527, "color": "#bd5c3b" },
+          { "label": "Other taxes", "amount": 304.404, "color": "#d4b56f" },
+          { "label": "Income taxes", "amount": 30.508, "color": "#8e8274" }
+        ],
+        "note": "Composition of the whole 2028 request, not the additional $485 million. Return includes debt financing and equity returns; it is not all shareholder profit."
+      },
+      "comments": { "count": 49, "observedAt": "2026-10-28", "sourceIds": ["scg-comments"], "method": "Manual reading of pagination total. Entries may include repeat commenters or removed entries. No personal information is republished." },
+      "commentUrl": "https://apps.cpuc.ca.gov/c/A2606014",
+      "related": { "utility": "SDG&E", "docket": "A.26-06-015", "comments": 425, "observedAt": "2026-10-28", "sourceIds": ["sdge-comments"], "url": "https://apps.cpuc.ca.gov/c/A2606015", "note": "The applications are consolidated, but comment lists are separate. SDG&E figures do not describe SoCalGas bills." },
+      "demands": [
+        { "id": "reconcile", "title": "Explain every additional dollar.", "description": "Publish a reconciliation of the proposed $485 million increase by operating costs, depreciation, taxes and capital returns.", "request": "Publish a complete reconciliation of the additional $485 million, separating operating costs, depreciation, taxes and returns on capital." },
+        { "id": "alternatives", "title": "Show the less expensive options.", "description": "Compare major investments with credible alternatives and measurable benefits for customers.", "request": "Require independent scrutiny of major investments, competitive procurement and comparisons with less expensive alternatives." },
+        { "id": "combined", "title": "Show the whole bill impact.", "description": "Assess this case alongside other pending requests, across household usage levels and through 2031.", "request": "Publish the combined household impact of this application and other pending cost-recovery requests through 2031." }
+      ]
+    }
+  ],
+  "hearings": [
+    { "id": "el-monte-afternoon", "caseId": "socalgas", "title": "SoCalGas public hearing", "mode": "In person", "start": "2026-11-09T14:00:00-08:00", "end": "2026-11-09T16:00:00-08:00", "endIsEstimate": true, "location": "El Monte City Hall East, Council Chambers · 11333 Valley Blvd., El Monte, CA 91731", "sourceIds": ["cpuc-hearings"] },
+    { "id": "el-monte-evening", "caseId": "socalgas", "title": "SoCalGas public hearing", "mode": "In person", "start": "2026-11-09T18:00:00-08:00", "end": "2026-11-09T20:00:00-08:00", "endIsEstimate": true, "location": "El Monte City Hall East, Council Chambers · 11333 Valley Blvd., El Monte, CA 91731", "sourceIds": ["cpuc-hearings"] },
+    { "id": "remote-dec9-afternoon", "caseId": "socalgas", "title": "SoCalGas / SDG&E remote hearing", "mode": "By phone", "start": "2026-12-09T14:00:00-08:00", "end": "2026-12-09T16:00:00-08:00", "endIsEstimate": true, "location": "1-800-857-1917 · passcode 1673482#", "sourceIds": ["cpuc-hearings"] },
+    { "id": "remote-dec9-evening", "caseId": "socalgas", "title": "SoCalGas / SDG&E remote hearing", "mode": "By phone", "start": "2026-12-09T18:00:00-08:00", "end": "2026-12-09T20:00:00-08:00", "endIsEstimate": true, "location": "1-800-857-1917 · passcode 1673482#", "sourceIds": ["cpuc-hearings"] },
+    { "id": "remote-dec10-afternoon", "caseId": "socalgas", "title": "SoCalGas / SDG&E remote hearing", "mode": "By phone", "start": "2026-12-10T14:00:00-08:00", "end": "2026-12-10T16:00:00-08:00", "endIsEstimate": true, "location": "1-800-857-1917 · passcode 1673482#", "sourceIds": ["cpuc-hearings"] },
+    { "id": "remote-dec10-evening", "caseId": "socalgas", "title": "SoCalGas / SDG&E remote hearing", "mode": "By phone", "start": "2026-12-10T18:00:00-08:00", "end": "2026-12-10T20:00:00-08:00", "endIsEstimate": true, "location": "1-800-857-1917 · passcode 1673482#", "sourceIds": ["cpuc-hearings"] }
+  ],
+  "evidence": [
+    { "id": "first-increase", "caseId": "socalgas", "category": "Revenue", "status": "Documented request", "title": "$485 million more requested for 2028", "summary": "The hearing notice describes a 10.5% revenue increase. This is the company’s request; approval is pending.", "sourceIds": ["scg-notice"], "reviewedAt": "2026-10-28" },
+    { "id": "later-years", "caseId": "socalgas", "category": "Revenue", "status": "Documented request", "title": "The request continues through 2031", "summary": "Sempra discloses additional annual increments of $315m, $312m and $314m for 2029, 2030 and 2031.", "sourceIds": ["sempra-sec"], "reviewedAt": "2026-10-28" },
+    { "id": "capital-return", "caseId": "socalgas", "category": "Financing", "status": "Documented request", "title": "Capital returns are part of the revenue requirement", "summary": "Table RH-1 includes $1.349bn in total capital returns. This includes financing costs and is not a measure of shareholder profit.", "sourceIds": ["scg-earnings"], "reviewedAt": "2026-10-28" },
+    { "id": "increase-bridge", "caseId": "socalgas", "category": "Accountability", "status": "Open question", "title": "What drives each part of the increase?", "summary": "The overall cost composition is not a category-by-category explanation of the increase. A comparable baseline reconciliation still needs review.", "sourceIds": ["scg-earnings"], "reviewedAt": "2026-10-28" },
+    { "id": "comments-evidence", "caseId": "socalgas", "category": "Participation", "status": "Procedure verified", "title": "Public comments and formal evidence have different roles", "summary": "Community participation can surface concerns. A formal challenge also needs evidence and participation under the CPUC’s rules.", "sourceIds": ["participation"], "reviewedAt": "2026-10-28" },
+    { "id": "combined-impact", "caseId": "socalgas", "category": "Accountability", "status": "Open question", "title": "What would all pending requests cost together?", "summary": "A reviewed inventory of other applications and a combined customer impact analysis have not yet been added to this project.", "sourceIds": ["scg-notice"], "reviewedAt": "2026-10-28" }
+  ],
+  "accountability": [
+    { "demandId": "reconcile", "status": "Research open", "evidence": "SCG-27 cost composition linked; incremental reconciliation still needs review.", "sourceIds": ["scg-earnings"], "utilityResponse": "Not logged", "commissionAction": "Not logged" },
+    { "demandId": "alternatives", "status": "Research open", "evidence": "Project alternatives and procurement comparisons have not yet been reviewed.", "sourceIds": [], "utilityResponse": "Not logged", "commissionAction": "Not logged" },
+    { "demandId": "combined", "status": "Research open", "evidence": "Combined impact inventory has not yet been reviewed.", "sourceIds": [], "utilityResponse": "Not logged", "commissionAction": "Not logged" }
+  ]
+}

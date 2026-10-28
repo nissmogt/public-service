@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#204d3b">
+  <meta name="description" content="Follow Southern California utility spending, check the sources, and take part in the decisions that shape your bills.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Public Service — Follow the money. Have a say.</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#main" class="brand" aria-label="Public Service home"><span class="brand-mark" aria-hidden="true">p<span>↗</span></span><span>public service<span class="brand-period">.</span></span></a>
+      <nav aria-label="Main navigation">
+        <a href="#overview">The case</a><a href="#money">The money</a><a href="#evidence">The evidence</a><a href="#action" class="nav-action">Take part <span aria-hidden="true">↗</span></a>
+      </nav>
+      <a class="source-code" href="https://github.com/nissmogt/public-service" target="_blank" rel="noopener noreferrer" aria-label="View the project on GitHub">Open project <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <div id="app"><p class="loading" role="status">Opening the public record…</p></div>
+    <noscript><div class="container panel"><h1>Follow the money. Have a say.</h1><p>This interactive dashboard needs JavaScript. You can still <a href="https://apps.cpuc.ca.gov/c/A2606014">read or submit SoCalGas comments at the CPUC</a>, <a href="https://www.cpuc.ca.gov/pph">check hearing dates</a>, or <a href="https://www.turn.org/sempra-grc">find TURN’s campaign</a>.</p></div></noscript>
+  </main>
+  <footer class="site-footer container">
+    <div><a class="footer-brand" href="#main">public service.</a><p>Public money. Public records. Public participation.</p></div>
+    <div><p>Independent community project.<br>Not affiliated with the CPUC, a utility, or TURN.</p><a href="https://github.com/nissmogt/public-service">Source & contributions ↗</a><button class="text-button" id="privacy-button" type="button">Privacy & methodology</button></div>
+  </footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="source-dialog" aria-labelledby="dialog-title"><div class="dialog-heading"><h2 id="dialog-title">Source notes</h2><button class="icon-button" id="close-dialog" aria-label="Close source notes" type="button">×</button></div><div id="dialog-content"></div></dialog>
+</body>
+</html>

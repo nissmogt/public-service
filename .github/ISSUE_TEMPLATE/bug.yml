@@ -1,0 +1,17 @@
+name: Website problem
+description: Report a broken action, accessibility issue or display problem.
+title: "[Website] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the action, expected result, browser and device. Avoid personal information.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true

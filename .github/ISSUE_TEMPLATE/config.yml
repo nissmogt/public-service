@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Official SoCalGas public comments
+    url: https://apps.cpuc.ca.gov/c/A2606014
+    about: Submit comments to the CPUC here. GitHub issues do not submit official comments.
+  - name: Existing Sempra organizing campaign
+    url: https://www.turn.org/sempra-grc
+    about: Explore TURN’s campaign. Public Service is independent and does not claim a partnership.

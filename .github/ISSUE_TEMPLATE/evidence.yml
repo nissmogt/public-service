@@ -1,0 +1,40 @@
+name: Evidence or correction
+description: Contribute an original public source or correct a specific claim.
+title: "[Evidence] "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is public. Do not include private bills, account numbers, contact lists or unverified personal accusations."
+  - type: input
+    id: record
+    attributes:
+      label: Record or research question
+      description: Link the relevant dashboard section or provide an evidence record ID.
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Original public source URL
+    validations:
+      required: true
+  - type: input
+    id: locator
+    attributes:
+      label: Page, table or section
+    validations:
+      required: true
+  - type: textarea
+    id: finding
+    attributes:
+      label: What does the source establish?
+      description: Distinguish a request, approval, payment, opinion and inference. Include units and comparison dates.
+    validations:
+      required: true
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or uncertainty
+      description: What does this source not establish? What still needs review?
+    validations:
+      required: true
